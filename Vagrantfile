@@ -66,30 +66,30 @@ Vagrant::Config.run do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]
   #   chef.roles_path = "../my-recipes/roles"
-  #   chef.data_bags_path = "../my-recipes/data_bags"
+    chef.data_bags_path = ["cookbooks/chiliproject/examples"]
     chef.add_recipe "chiliproject"
   #   chef.add_role "web"
   #
   #   # You may also specify custom JSON attributes:
-    chef.json = {
-      "chiliproject" => {
-        "id" => "chili",
+  #   chef.json = {
+  #     "chiliproject" => {
+  #       "id" => "chili",
 
-        # "base_uri": "http://chili.dev",
+  #       # "base_uri": "http://chili.dev",
 
-        # "repository": "https://github.com/chiliproject/chiliproject.git",
-        "revision" => "master",
+  #       # "repository": "https://github.com/chiliproject/chiliproject.git",
+  #       "revision" => "master",
 
-        "database" => {
-          "adapter" => "mysql2",
-          "create_if_missing" => "true",
-          "password" => "chili"
-        },
-        "session" => {
-          "secret" => "supersecretsupersecretsupersecretsupersecretsupersecret"
-        }
-      }
-    }
+  #       "database" => {
+  #         "adapter" => "mysql2",
+  #         "create_if_missing" => "true",
+  #         "password" => "chili"
+  #       },
+  #       "session" => {
+  #         "secret" => "supersecretsupersecretsupersecretsupersecretsupersecret"
+  #       }
+  #     }
+  #   }
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,
