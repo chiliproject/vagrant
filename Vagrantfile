@@ -15,6 +15,7 @@ Vagrant::Config.run do |config|
 
     chef.data_bags_path = ["data_bags"]
 
+    chef.add_recipe "apt"
     chef.add_recipe "postgresql::server"
     chef.add_recipe "chiliproject"
     chef.add_recipe "chiliproject::apache2"
