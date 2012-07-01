@@ -13,5 +13,10 @@
   },
   "session": {
     "secret": "supersecretsupersecretsupersecretsupersecretsupersecret"
+  },
+
+  "apache": {
+    "aliases": ["127.0.0.1"],
+    "serve_aliases": true
   }
 }

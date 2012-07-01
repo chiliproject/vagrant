@@ -25,9 +25,10 @@ TO** adapt the configuration and change the secret keys and passwords.
     # start the Vagrant VM
     vagrant up
 
+After that is done, point your browser to http://127.0.0.1:8080
+
 ## Known issues
 
-* The current config requires `chili.dev` to point to your `localhost`
 * The networking section generally needs more work
 
 ## Contributors
