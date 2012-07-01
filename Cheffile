@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
-#^syntax detection
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
 
 site 'http://community.opscode.com/api/v1'
 
@@ -11,14 +12,3 @@ cookbook 'database',
 
 cookbook 'chiliproject',
   :git => 'https://github.com/meineerde/chiliproject-cookbook.git'
-
-# cookbook 'chef-client'
-
-# cookbook 'apache2', '>= 1.0.0'
-
-# cookbook 'rvm',
-#   :git => 'https://github.com/fnichol/chef-rvm'
-
-# cookbook 'postgresql',
-#   :git => 'https://github.com/findsyou/cookbooks',
-#   :ref => 'postgresql-improvements'
