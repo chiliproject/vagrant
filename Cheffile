@@ -3,6 +3,10 @@
 
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'database',
+  :git => 'https://github.com/finnlabs/cookbook-database.git',
+  :ref => 'COOK-1401'
+
 cookbook 'chiliproject',
   :git => 'https://github.com/meineerde/chiliproject-cookbook.git'
 
