@@ -24,3 +24,19 @@ TO** adapt the configuration and change the secret keys and passwords.
 
     # start the Vagrant VM
     vagrant up
+
+## Known issues
+
+* The current config requires `chili.dev` to point to your `localhost`
+* The networking section generally needs more work
+
+## Contributors
+
+* [Felix](https://github.com/thegcat)
+* [Holger](https://github.com/meineerde)
+
+## License
+
+Copyright (c) 2012 - Felix Schäfer, Holger Just
+
+This software is licensed under the MIT license. See LICENSE for details.
