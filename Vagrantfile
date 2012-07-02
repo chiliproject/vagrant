@@ -5,10 +5,8 @@ Vagrant::Config.run do |config|
   config.vm.box = "lucid32"
   config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
 
-  # Apache ports are accessible on localhost
-  config.vm.forward_port 80, 8080
-  config.vm.forward_port 443, 8443
-
+  # The box will only be available locally on this IP
+  config.vm.network :hostonly, "10.0.43.42"
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]

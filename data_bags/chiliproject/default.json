@@ -1,22 +1,14 @@
 {
   "id": "default",
 
-  "base_uri": "http://chili.dev",
-
   "repository": "https://github.com/chiliproject/chiliproject.git",
-  "revision": "stable",
+  "revision": "master",
   "force_deploy": true,
-  "migrate": true,
 
   "database": {
     "password": "super_secret"
   },
   "session": {
     "secret": "supersecretsupersecretsupersecretsupersecretsupersecret"
-  },
-
-  "apache": {
-    "aliases": ["127.0.0.1"],
-    "serve_aliases": true
   }
 }

@@ -4,7 +4,7 @@ Try to build a Vagrant environment for ChiliProject development, maybe
 deployments too.
 
 The default configuration will setup a PostgreSQL server, Apache + Passenger
-and a single ChiliProject instance.
+and a single ChiliProject instance checked out from the master branch.
 
 You can customize the instance in `data_bags/chiliproject/default.json`.
 Please refer to [the documentation of the chiliproject
@@ -25,11 +25,12 @@ TO** adapt the configuration and change the secret keys and passwords.
     # start the Vagrant VM
     vagrant up
 
-After that is done, point your browser to http://127.0.0.1:8080
+After that is done, point your browser to http://10.0.43.42
 
 ## Known issues
 
-* The networking section generally needs more work
+* The networking section could use more work
+* The folder containing the current source should be exported
 
 ## Contributors
 
