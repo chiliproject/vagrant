@@ -1,4 +1,4 @@
-# chiliproject-vagrant
+# ChiliProject Vagrant
 
 Try to build a Vagrant environment for ChiliProject development, maybe
 deployments too.
@@ -39,6 +39,6 @@ After that is done, point your browser to http://10.0.43.42
 
 ## License
 
-Copyright (c) 2012 - Felix Schäfer, Holger Just
+Copyright (c) 2012 The ChiliProject Team
 
 This software is licensed under the MIT license. See LICENSE for details.
