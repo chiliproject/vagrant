@@ -8,7 +8,7 @@ and a single ChiliProject instance checked out from the master branch.
 
 You can customize the instance in `data_bags/chiliproject/default.json`.
 Please refer to [the documentation of the chiliproject
-cookbook](https://github.com/meineerde/chiliproject-cookbook/blob/master/README.md)
+cookbook](https://github.com/chiliproject/cookbook/blob/master/README.md)
 for configuration details.
 
 If you use this repository as a basis for a production deployment, you **HAVE
