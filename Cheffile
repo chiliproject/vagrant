@@ -11,4 +11,4 @@ cookbook 'database',
   :ref => 'COOK-1401'
 
 cookbook 'chiliproject',
-  :git => 'https://github.com/meineerde/chiliproject-cookbook.git'
+  :git => 'https://github.com/chiliproject/cookbook.git'
