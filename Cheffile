@@ -4,11 +4,7 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook "apt"
-
-cookbook 'database',
-  :git => 'https://github.com/finnlabs/cookbook-database.git',
-  :ref => 'COOK-1401'
+cookbook 'apt'
 
 cookbook 'chiliproject',
   :git => 'https://github.com/chiliproject/cookbook.git'
