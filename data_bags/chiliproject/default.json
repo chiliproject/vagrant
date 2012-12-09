@@ -1,6 +1,8 @@
 {
   "id": "default",
 
+  "external_uri": "http://localhost:4223",
+
   "repository": "https://github.com/chiliproject/chiliproject.git",
   "revision": "master",
   "force_deploy": true,

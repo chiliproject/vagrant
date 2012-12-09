@@ -25,7 +25,7 @@ TO** adapt the configuration and change the secret keys and passwords.
     # start the Vagrant VM
     vagrant up
 
-After that is done, point your browser to http://10.0.43.42
+After that is done, point your browser to http://localhost:4223
 
 ## Known issues
 
