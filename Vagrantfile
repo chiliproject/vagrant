@@ -17,5 +17,13 @@ Vagrant::Config.run do |config|
     chef.add_recipe "postgresql::server"
     chef.add_recipe "chiliproject"
     chef.add_recipe "chiliproject::apache2"
+
+    chef.json = {
+      "postgresql" => {
+        "password" => {
+          "postgres" => "supersecretpostgressuperuserpassword"
+        }
+      }
+    }
   end
 end
