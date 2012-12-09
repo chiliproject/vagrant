@@ -5,8 +5,10 @@ Vagrant::Config.run do |config|
   config.vm.box = "lucid32"
   config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
 
-  # The box will only be available locally on this IP
-  config.vm.network :hostonly, "10.0.43.42"
+  # The default ChiliProject  will be available on http://localhost:4223
+  # CAUTION: if you change this, you must remember to change the port of the
+  #          external_uri parameter in data_bags/chiliproject/default.json
+  config.vm.forward_port 80, 4223
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]
@@ -19,6 +21,11 @@ Vagrant::Config.run do |config|
     chef.add_recipe "chiliproject::apache2"
 
     chef.json = {
+      "chiliproject" => {
+        "apache" => {
+          "serve_aliases" => true
+        }
+      },
       "postgresql" => {
         "password" => {
           "postgres" => "supersecretpostgressuperuserpassword"
