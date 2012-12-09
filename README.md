@@ -25,7 +25,10 @@ TO** adapt the configuration and change the secret keys and passwords.
     # start the Vagrant VM
     vagrant up
 
-After that is done, point your browser to http://localhost:4223
+After that is done, point your browser to <http://localhost:4223>.
+
+NOTE: Remember to import the default data for your locale by visiting the
+[Administration page of your new installation](http://localhost:4223/admin).
 
 ## Known issues
 
