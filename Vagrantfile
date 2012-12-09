@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.box = "lucid32"
-  config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   # The default ChiliProject  will be available on http://localhost:4223
   # CAUTION: if you change this, you must remember to change the port of the
