@@ -19,9 +19,6 @@ TO** adapt the configuration and change the secret keys and passwords.
     # Install required gems
     bundle install
 
-    # Retrieve cookbooks
-    librarian-chef install
-
     # start the Vagrant VM
     vagrant up
 
